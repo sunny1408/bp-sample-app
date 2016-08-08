@@ -53,7 +53,7 @@
                 <tr ng-repeat-start="mail in vm.filteredMails">
                     <td>{{ mail.name }}</td>
                     <td>{{ mail.email }}</td>
-                    <td>{{ mail.sent }}</td>
+                    <td>{{ mail.sent | date }}</td>
                     <td>{{ mail.inbound? 'Recieved': 'Sent' }}</td>
                 </tr>
                 <tr ng-repeat-end>
